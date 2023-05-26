@@ -44,6 +44,17 @@
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
 </head>
+<style>
+  .method-img {
+    width: 80%;
+    margin-left: auto;
+    margin-right:auto;
+    display:block;
+  }
+  .text-center {
+    text-align: center;
+  }
+</style>
 <body>
 
 
@@ -72,14 +83,15 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
+      <!-- class="carousel results-carousel" -->
+      <div id="results-carousel">
        <div class="item">
         <!-- Your image here -->
         <img src="static/images/fig_teaser.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           We present TRAvatar, a novel framework to capture and reconstruct high-fidelity volumetric avatars. Trained efficiently end-to-end on multi-view image sequences under varying illuminations, our virtual avatars can be relighted and animated in real-time of high fidelity.
         </h2>
-      </div>
+      </h2>
     </div>
   </div>
 </div>
@@ -109,10 +121,10 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
+      <div id="results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/fig_method.png" alt="MY ALT TEXT"/>
+        <img class="method-img" src="static/images/fig_method.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           The pipeline of our framework. TRAvatar is a relightable volumetric avatar representation learned from multiview image sequences, including dynamic expressions and varying illuminations. For each frame, a motion encoder forecasts the disentangled global rigid transformation and expression code. With the given expression code, lighting condition, and view direction, a series of decoders subsequently predict the base mesh and the volumetric primitives mounted on it. Notably, a physically-inspired appearance decoder detailed in is proposed to facilitate network training. Ultimately, the final avatar representation is computed and then rendered, adaptable to any viewpoint and any lighting condition.
         </h2>
@@ -124,30 +136,23 @@
 </section>
 <!-- End image carousel -->
 
-
-
-
-<!-- Youtube video -->
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <!-- Paper video. -->
+      <h2 class="title is-3 text-center">Video</h2>
       <div class="columns is-centered has-text-centered">
-        <h2 class="title is-3">Video</h2>
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
+        <div class="column is-four-fifths">
           
-            <div class="publication-video">
-              <!-- Youtube embed code here -->
-              <iframe src="https://www.youtube.com/embed/zAefqIcmIaA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
+          <div class="publication-video">
+            <!-- Youtube embed code here -->
+            <iframe src="https://www.youtube.com/embed/zAefqIcmIaA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
